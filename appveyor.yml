@@ -1,0 +1,9 @@
+clone_folder: c:\projects\resolve-jsdoc-bin
+node_js:
+  - "0.10"
+  - "6"
+script: npm run test
+branches:
+  only:
+    - master
+os: Visual Studio 2015
