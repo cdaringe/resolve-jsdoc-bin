@@ -4,18 +4,13 @@
   "description": "resolve the jsdoc executable",
   "main": "src/index.js",
   "scripts": {
-    "validate": "npm ls && ripcord counsel check",
-    "secure": "nsp check",
+    "validate": "npm ls",
     "lint": "standard",
     "check-coverage": "nyc check-coverage --lines 90 --functions 90 --branches 90",
-    "docs": "ripcord docs",
-    "docs-publish": "ripcord docs --publish",
-    "postpublish": "npm run docs-publish",
     "preversion": "git checkout master && git pull && npm run validate",
     "publish-patch": "npm run preversion && npm version patch && git push origin master --tags && npm publish",
     "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
     "publish-major": "npm run preversion && npm version major && git push origin master --tags && npm publish",
-    "check-licenses": "ripcord licenses check",
     "test": "nyc --reporter=lcov node test/"
   },
   "repository": {
@@ -35,20 +30,9 @@
   },
   "homepage": "https://github.com/cdaringe/resolve-jsdoc-bin#readme",
   "devDependencies": {
-    "nsp": "^2.6.2",
+    "coveralls": "^2.11.14",
     "nyc": "^8.3.2",
-    "ripcord": "^0.6.4",
     "standard": "^8.5.0",
     "tape": "^4.6.2"
-  },
-  "ripcord": {},
-  "pre-commit": [
-    "validate",
-    "lint",
-    "test",
-    "check-coverage",
-    "check-licenses",
-    "secure",
-    "docs"
-  ]
+  }
 }
