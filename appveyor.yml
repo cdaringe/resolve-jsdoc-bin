@@ -2,7 +2,7 @@ clone_folder: c:\projects\resolve-jsdoc-bin
 environment:
   matrix:
     - nodejs_version: '0.10'
-    - nodejs_version: '6':
+    - nodejs_version: '6'
 install:
   - ps: Install-Product node $env:nodejs_version
   - set CI=true
