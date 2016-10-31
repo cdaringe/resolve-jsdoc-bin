@@ -1,8 +1,18 @@
 clone_folder: c:\projects\resolve-jsdoc-bin
-node_js:
-  - "0.10"
-  - "6"
-script: npm run test
+environment:
+  matrix:
+    - nodejs_version: '0.10'
+    - nodejs_version: '6':
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - set CI=true
+  - npm -g install npm@latest
+  - set PATH=%APPDATA%\npm;%PATH%
+  - npm install
+test_script:
+  - node --version
+  - npm --version
+  - npm test
 branches:
   only:
     - master
