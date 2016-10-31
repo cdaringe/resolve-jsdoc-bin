@@ -1,6 +1,6 @@
 {
   "name": "resolve-jsdoc-bin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "resolve the jsdoc executable",
   "main": "src/index.js",
   "scripts": {
