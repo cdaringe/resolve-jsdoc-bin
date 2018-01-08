@@ -1,4 +1,6 @@
 # resolve-jsdoc-bin
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cdaringe/resolve-jsdoc-bin.svg)](https://greenkeeper.io/)
 resolve the jsdoc executable
 
 [![Build Status](https://travis-ci.org/cdaringe/resolve-jsdoc-bin.svg?branch=master)](https://travis-ci.org/cdaringe/resolve-jsdoc-bin) [![Build status](https://ci.appveyor.com/api/projects/status/bb2lqlqi6mw7wl60/branch/master?svg=true)](https://ci.appveyor.com/project/cdaringe/resolve-jsdoc-bin/branch/master) [![Coverage Status](https://coveralls.io/repos/github/cdaringe/resolve-jsdoc-bin/badge.svg?branch=master)](https://coveralls.io/github/cdaringe/resolve-jsdoc-bin?branch=master) ![](https://img.shields.io/badge/standardjs-%E2%9C%93-brightgreen.svg)
